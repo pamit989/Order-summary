@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-image: url(/images/pattern-background-desktop.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(225, 100%, 94%);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 450px;
+  background-color: #fff;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.text {
+  padding: 15px;
+  text-align: center;
+}
+.title {
+  padding: 15px 0;
+  color: hsl(223, 47%, 23%);
+  font-size: 30px;
+  font-weight: 900;
+}
+.sub-title {
+  color: hsl(224, 23%, 55%);
+  font-size: 16px;
+  margin: 0 20px;
+}
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 25px 20px;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 15px;
+  padding: 25px;
+}
+.content .one {
+  display: flex;
+  align-items: center;
+}
+.one > img {
+  padding-right: 25px;
+}
+.one div h5 {
+  color: hsl(223, 47%, 23%);
+  font-size: 18px;
+  padding-bottom: 5px;
+}
+.one div p {
+  color: hsl(224, 23%, 55%);
+}
+.content p {
+  font-size: 19px;
+  text-transform: capitalize;
+  color: hsl(245, 75%, 52%);
+}
+.btn {
+  padding: 15px 110px;
+  text-align: center;
+  background-color: hsl(245, 75%, 52%);
+  border-radius: 12px;
+  color: #fff;
+  font-weight: 900;
+  cursor: pointer;
+}
+.btn-1 {
+  padding: 20px 0 25px;
+  cursor: pointer;
+  font-weight: 900;
+  color: hsl(224, 23%, 55%);
+}
+
+@media screen and (max-width: 425px) {
+  .container {
+    margin: 15px;
+  }
+  .btn {
+    margin: 0px 35px;
+  }
+}
